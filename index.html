@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <title>Sea Monkey</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="main-header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img src="../image/logo.svg" alt="logo" />
+          </a>
+          <hr />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-md-auto gap-3">
+              <li class="nav-item">
+                <a class="nav-link link" aria-current="page" href="#expeditions"
+                  >EXPEDITIONS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="./gallery.html"
+                  >GALLERY</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="./faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn rounded-1" href="#contact"
+                  >CONTACT
+                  <img src="../image/Vector (12).svg" alt="right-arrow"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content text-center text-white">
+      <h1 class="explore">Explore</h1>
+      <h3 class="">Untamed Wilderness</h3>
+      <p class="">Now operating in Jordan</p>
+      <a class="btn rounded-1 text-white text-decoration-none" href="#"
+        >KNOW MORE <img src="../image/Vector (12).svg" alt="right-arrow"
+      /></a>
+    </div>
+
+    <!-- </div> -->
+    <img src="../image/Group 43.png" alt="" class="bottom-img" />
+
+    <section class="main">
+      <!-- About -->
+      <section class="about container">
+        <div class="row align-items-center">
+          <div class="col-md-5 col-sm-12 about-content">
+            <h3>About</h3>
+            <h5>
+              Welcome to SeaMonkey Expeditions, Jordan's Premier Wildlife
+              Experience!
+            </h5>
+            <p>
+              At SeaMonkey Expeditions, we are dedicated to showcasing the
+              remarkable wildlife of Jordan. Join us on an unforgettable journey
+              to witness the Arabian Oryx, stunning birds, graceful water
+              buffalos, and thriving marine life. Our passion for nature and
+              commitment to responsible ecotourism ensure an extraordinary
+              adventure you'll cherish forever. Let us guide you through the
+              untouched beauty of Jordan and its diverse ecosystems, while
+              contributing to the conservation efforts that protect these
+              precious species.
+            </p>
+          </div>
+          <div class="col-md-7 col-sm-12 about-banner">
+            <img src="../image/Explore.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <img src="../image/WhatsApp 1.svg" alt="" class="sticky" />
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+
+      <!-- EXPEDITIONS -->
+      <section id="expeditions" class="expeditions container text-center">
+        <div class="expeditions-header">
+          <h3>Expeditions</h3>
+          <p>Choose your exploration style</p>
+
+          <div class="row align-items-center pt-4 traced-buttons">
+            <div
+              class="col-2 title-traced p-3 all-trips hiking active"
+              data-filter="all"
+              onclick="toggleActive(this)"
+            >
+              ALL<br />TRIPS
+            </div>
+            <div
+              class="col-2 title-traced all-trips"
+              data-filter="Hiking"
+              onclick="toggleActive(this)"
+            >
+              <img src="../image/hiking (traced).svg" alt="Hiking" />
+              <div class="">HIKING</div>
+            </div>
+            <div
+              class="col-2 title-traced all-trips"
+              onclick="toggleActive(this)"
+            >
+              <img src="../image/camping (traced).svg" alt="Camping" />
+              <div class="">CAMPING</div>
+            </div>
+            <div
+              class="col-2 title-traced all-trips"
+              data-filter="sea-safari"
+              onclick="toggleActive(this)"
+            >
+              <img src="../image/snorkeling (traced).svg" alt="Sea safari" />
+              <div class="">SEA SAFARI</div>
+            </div>
+            <div
+              class="col-2 title-traced all-trips"
+              onclick="toggleActive(this)"
+            >
+              <img src="../image/safari (traced).svg" alt="Vehicle safari" />
+              <div class="">VEHICLE SAFARI</div>
+            </div>
+          </div>
+        </div>
+        <div class="cards row trip-details">
+          <div class="Hiking card border-0 col-md-4 col-sm-12">
+            <div class="img-over">
+              <a href="">
+                <img
+                  src="../image/card-img-1.png"
+                  class="card-img-top card-banner"
+                  alt="man"
+              /></a>
+            </div>
+            <img
+              src="../image/Group 24 (1).svg"
+              alt=""
+              style="position: absolute; right: 12px; top: 0"
+            />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Water buffalo & bird watching trek</h5>
+                <p class="card-btn">Hiking</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="card-location">
+                  <div class="d-flex gap-2">
+                    <img src="../image/carbon_location.svg" alt="" />
+                    <p class="card-text mb-0 pb-3 pt-3">Azraq, Jordan</p>
+                  </div>
+                  <p class="card-text mb-0">Group size: Min 3 - Max 20</p>
+                </div>
+                <div class="d-flex gap-2 pt-3">
+                  <img
+                    src="../image/ph_clock.svg"
+                    alt=""
+                    width="18px"
+                    height="20px"
+                  />
+                  <p class="card-text mb-0">
+                    <span style="font-weight: 600">3</span> Hrs
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sea-safari card border-0 col-md-4 col-sm-12">
+            <div class="img-over">
+              <a href="">
+                <img
+                  src="../image/card-img-2.png"
+                  class="card-img-top card-banner"
+                  alt="man"
+              /></a>
+            </div>
+            <img
+              src="../image/Group 24 (2).svg"
+              alt=""
+              style="position: absolute; right: 12px; top: 0"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">
+                  Scuba dive or <br />snorkel the red sea
+                </h5>
+                <p class="card-btn">Sea safari</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="card-location">
+                  <div class="d-flex gap-2">
+                    <img src="../image/carbon_location.svg" alt="" />
+                    <p class="card-text mb-0 pb-3 pt-3">Aqaba, Jordan</p>
+                  </div>
+                  <p class="card-text mb-0">Group size: -</p>
+                </div>
+                <div class="d-flex gap-2 pt-3">
+                  <img
+                    src="../image/ph_clock.svg"
+                    alt=""
+                    width="18px"
+                    height="20px"
+                  />
+                  <p class="card-text mb-0">
+                    <span style="font-weight: 600">6</span> Hrs
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Hiking card border-0 col-md-4 col-sm-12">
+            <div class="img-over">
+              <a href="">
+                <img
+                  src="../image/card-img-3.png"
+                  class="card-img-top card-banner"
+                  alt="man"
+              /></a>
+            </div>
+            <img
+              src="../image/Group 24 (1).svg"
+              alt=""
+              style="position: absolute; right: 12px; top: 0"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">
+                  Hike in the <br />
+                  wild
+                </h5>
+                <p class="card-btn">Hiking</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="card-location">
+                  <div class="d-flex gap-2">
+                    <img src="../image/carbon_location.svg" alt="" />
+                    <p class="card-text mb-0 pb-3 pt-3">Tafilah, Jordan</p>
+                  </div>
+                  <p class="card-text mb-0">Group size: Min 6 - Max 20</p>
+                </div>
+                <div class="d-flex gap-2 pt-3">
+                  <img
+                    src="../image/ph_clock.svg"
+                    alt=""
+                    width="18px"
+                    height="20px"
+                  />
+                  <p class="card-text mb-0">
+                    <span style="font-weight: 600">5</span> Hrs
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="btn rounded-1 text-white text-decoration-none"
+          id="viewAllTrips"
+          >VIEW ALL TRIPS<img src="../image/Vector (12).svg" alt="right-arrow"
+        /></a>
+      </section>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery">
+      <div class="container text-white text-center">
+        <h3>Gallery</h3>
+        <p>See what we have captured</p>
+
+        <div class="row">
+          <div class="col-md-5 col-sm-12 elephant">
+            <div class="img-over">
+              <a href=""> <img src="../image/elephant.png" alt="elephant" /></a>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="row img-wrapper">
+              <div class="col-md-6 col-sm-12 small-img">
+                <div class="img-over">
+                  <a href="">
+                    <img src="../image/Trecking.png" alt="Trecking"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 small-img">
+                <div class="img-over">
+                  <a href=""> <img src="../image/Tent.png" alt="Tent" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 ocean">
+                <div class="img-over">
+                  <a href=""> <img src="../image/Ocean.png" alt="Ocean" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="btn rounded-1 text-white text-decoration-none"
+          href="../gallery/gallery.html"
+          >VIEW ALL<img src="../image/Vector (12).svg" alt="right-arrow"
+        /></a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq container text-center">
+      <h3>FAQ</h3>
+      <p>Frequently Asked Questions</p>
+      <div class="accordion accordion-flush pt-5 pb-5" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              Is spotting wildlife guaranteed?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Jordan is home to vast wildlife, the country is a very important
+              migratory route for many bird species, the red sea is home to over
+              500 species of fish. Apart from the vast Jordanian wilderness, at
+              a Seamonkey adventure, we try to maximize your chances of also
+              spotting Arabian oryx, water buffalo, raptors, sea turtles, rock
+              hyrax, desert foxes & Nubian ibex. There are animals that very few
+              people have recorded in Jordan that are extremely difficult to
+              find because of their very shy and skittish nature such as striped
+              hyenas, sand cats, Eurasian badgers and whale sharks. With some
+              great luck you could be some of the very few people that were able
+              to spot them!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="true"
+              aria-controls="collapseTwo"
+            >
+              What wildlife are we expected to see in Jordan?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Jordan is home to vast wildlife, the country is a very important
+              migratory route for many bird species, the red sea is home to over
+              500 species of fish. Apart from the vast Jordanian wilderness, at
+              a Seamonkey adventure, we try to maximize your chances of also
+              spotting Arabian oryx, water buffalo, raptors, sea turtles, rock
+              hyrax, desert foxes & Nubian ibex. There are animals that very few
+              people have recorded in Jordan that are extremely difficult to
+              find because of their very shy and skittish nature such as striped
+              hyenas, sand cats, Eurasian badgers and whale sharks. With some
+              great luck you could be some of the very few people that were able
+              to spot them!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              When is the best time to visit Jordan to look for wildlife?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Jordan is home to vast wildlife, the country is a very important
+              migratory route for many bird species, the red sea is home to over
+              500 species of fish. Apart from the vast Jordanian wilderness, at
+              a Seamonkey adventure, we try to maximize your chances of also
+              spotting Arabian oryx, water buffalo, raptors, sea turtles, rock
+              hyrax, desert foxes & Nubian ibex. There are animals that very few
+              people have recorded in Jordan that are extremely difficult to
+              find because of their very shy and skittish nature such as striped
+              hyenas, sand cats, Eurasian badgers and whale sharks. With some
+              great luck you could be some of the very few people that were able
+              to spot them!
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="btn rounded-1 text-white text-decoration-none"
+        href="../faq/faq.html"
+        >VIEW ALL<img src="../image/Vector (12).svg" alt="right-arrow"
+      /></a>
+    </section>
+
+    <!-- contact-form -->
+    <section id="contact" class="connect">
+      <div class="container custom-transparent-bg">
+        <div class="row justify-content-center custom-transparent-bg">
+          <div class="col-xl-10 custom-transparent-bg">
+            <div
+              class="card border-0 rounded-1 shadow-lg overflow-hidden bg-transparent"
+            >
+              <div class="card-body p-0 custom-transparent-bg">
+                <div class="row g-0 custom-transparent-bg">
+                  <div class="col-sm-5 d-none d-sm-block bg-image"></div>
+                  <div class="col-sm-7 p-4 form-content">
+                    <div class="text-center">
+                      <div class="h3">Lets Get connected</div>
+                    </div>
+
+                    <form action="#!">
+                      <div class="row gy-2 gy-xl-2 p-2 p-xl-2 text-white">
+                        <div class="col-12 col-md-6 pb-3">
+                          <label for="firstname" class="form-label"
+                            >First Name</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control rounded-2 bg-transparent"
+                            id="firstname"
+                            name="firstname"
+                            value=""
+                            required
+                          />
+                        </div>
+                        <div class="col-12 col-md-6 pb-3">
+                          <label for="surname" class="form-label"
+                            >Last Name</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control rounded-2 bg-transparent"
+                            id="surname"
+                            name="surname"
+                            value=""
+                            required
+                          />
+                        </div>
+                        <div class="col-12 col-md-6 pb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <div class="input-group">
+                            <input
+                              type="email"
+                              class="form-control rounded-2 bg-transparent"
+                              id="email"
+                              name="email"
+                              value=""
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 pb-3">
+                          <label for="phone" class="form-label">Phone </label>
+                          <div class="input-group">
+                            <input
+                              type="tel"
+                              class="form-control rounded-2 bg-transparent"
+                              id="phone"
+                              name="phone"
+                              value=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-12 pb-5">
+                          <label for="message" class="form-label"
+                            >Message</label
+                          >
+                          <textarea
+                            class="form-control rounded-2 bg-transparent"
+                            id="message"
+                            name="message"
+                            rows="4"
+                            required
+                          ></textarea>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center">
+                          <a class="nav-link btn rounded-1" href="#"
+                            >SUBMIT
+                            <img
+                              src="../image/Vector (12).svg"
+                              alt="right-arrow"
+                          /></a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-black text-white">
+      <section class="contact-area border-bottom p-4" id="contact">
+        <div class="container">
+          <div class="">
+            <div class="col-lg-6 offset-lg-3">
+              <div class="contact-content text-center">
+                <a href="./index.html"
+                  ><img src="../image/logo.svg" alt="logo"
+                /></a>
+                <div class="nav-items">
+                  <ul
+                    class="d-flex column-gap-4 justify-content-center pt-4 pb-3"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link link text-white"
+                        aria-current="page"
+                        href="#expeditions"
+                        >EXPEDITIONS</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link link text-white"
+                        href="./gallery.html"
+                        >GALLERY</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link text-white" href="./faq.html"
+                        >FAQ</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link text-white" href="#"
+                        >PRIVACY POLICIES</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="contact-social">
+                  <ul
+                    class="d-flex column-gap-3 text-center justify-content-center"
+                  >
+                    <li>
+                      <a
+                        class="rounded-5 w-100 h-100 pt-2 d-inline-block facebook"
+                        href="#facebook"
+                        target="_blank"
+                        ><img src="../image/facebook.svg" alt="facebook"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        class="rounded-5 w-100 h-100 pt-2 d-inline-block"
+                        href="#twitter"
+                        target="_blank"
+                        ><img src="../image/twitter.svg" alt="twitter"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        class="rounded-5 w-100 h-100 pt-2 d-inline-block"
+                        href="#instagram"
+                        target="_blank"
+                        ><img
+                          src="../image/basil_instagram-solid.svg"
+                          alt="instagram"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        class="rounded-5 w-100 h-100 pt-2 d-inline-block"
+                        href="#whatsapp"
+                        target="_blank"
+                        ><img src="../image/uim_whatsapp.svg" alt="whatsapp"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="container">
+        <div
+          class="row text-center pt-3 text-white"
+          style="font-family: 'Manrope-Regular'"
+        >
+          <p class="col-lg-6 col-sm-12">Copyright &#169; 2023 Seemonkey</p>
+          <p class="col-lg-6 col-md-12">Terms &amp; Conditions</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function toggleActive(element) {
+        const buttons = document.querySelectorAll(".title-traced");
+        buttons.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        element.classList.add("active");
+      }
+    </script>
+    <script>
+      //tabs
+      document.addEventListener("DOMContentLoaded", function () {
+        function filterTrips(tripType) {
+          const tripCards = document.querySelectorAll(".trip-details > div");
+          tripCards.forEach(function (card) {
+            if (tripType === "all" || card.classList.contains(tripType)) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        }
+        //  "All Trips" button and trip buttons
+        const tripButtons = document.querySelectorAll(".traced-buttons div");
+        tripButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            const tripType = this.getAttribute("data-filter");
+            filterTrips(tripType);
+          });
+        });
+        // View All Trips
+        const viewAllTripsButton = document.getElementById("viewAllTrips");
+        viewAllTripsButton.addEventListener("click", function () {
+          const tripCards = document.querySelectorAll(".trip-details > div");
+          tripCards.forEach(function (card) {
+            card.style.display = "block";
+          });
+        });
+      });
+    </script>
+    <script>
+      //scrolltotop
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
